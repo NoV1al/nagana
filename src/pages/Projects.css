@@ -1,0 +1,97 @@
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+}
+
+
+.projects-page {
+  background-color: #D6C7A1;
+  text-align: center;
+  padding: 50px 20px;
+  color: #3E2723;
+}
+
+.projects-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #3E2723;
+}
+
+.projects-page h1 span {
+  color: #A89F91; 
+}
+
+.projects-page p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #5C4033;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #A89F91;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(62, 39, 35, 0.3);
+  animation: wiggle 0.5s ease;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #3E2723;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color:#3E2723;
+  margin-bottom: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-github {
+  background-color: #3E2723;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fcf8f8;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.btn-github:hover {
+  background-color: #5C4033;
+}
